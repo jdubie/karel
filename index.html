@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    	<head>
+		<title>Karel Learns JavaScript</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript" src="lib/util.js"></script>
+		<script type="text/javascript" src="lib/point.js"></script>
+		<script type="text/javascript" src="lib/circle.js"></script>
+		<script type="text/javascript" src="../codeMirror/js/codemirror.js"></script>
+		<script type="text/javascript" src="js/karel.js"></script>
+		<script type="text/javascript" src="js/beepers.js"></script>
+		<script type="text/javascript" src="js/walls.js"></script>
+		<script type="text/javascript" src="js/karelWorld.js"></script>
+		<script type="text/javascript" src="js/karelApplication.js"></script>
+		<script type="text/javascript" src="js/application.js"></script>
+
+		<div id="header">
+			<div id="inner">
+				<a id="logo" href="" rel="nofollow">Open Classroom</a>
+				<div id = "smallLinks">
+					<a id="smallLink" href="materials/karellearnsJava.pdf" rel="nofollow">Book</a>
+					|
+					<a id="smallLink" href="about.html" rel="nofollow">About</a>
+				</div>
+			</div>
+
+		</div>
+
+
+	</head>
+
+    	<body>
+
+    		<div id="content">
+
+	    		<div id="buttonBar">
+
+				<form>
+					Start:
+					<input type='button' value='Run' id='interactor'
+						onClick='application.runButton()'>
+					&nbsp;&nbsp;
+					World:
+					<select name="world" size=0 id='interactor'
+						onChange='application.changeWorld(this)'>
+						<option value="1" selected="yes">15x15.w
+						<option value="1">12x12.w
+						<option value="2">9x9.w
+						<option value="2">8x2.w
+						<option value="2">1x6.w
+						<option value="3">4x4.w
+						<option value="3">1x1.w
+						<option value="4">large.w
+						<option value="4">collectNewspaper.w
+					</select>
+					<!---&nbsp;&nbsp;
+					File:
+					<input type='button' value='Save' id='interactor'
+						onClick='application.saveButton()'>
+					<input type='button' value='Load' id='interactor'
+						onClick='application.saveButton()'>-->
+				</form>
+			</div>
+
+
+
+
+<textarea name="code" id="code">//write your karel javascript
+//code here.
+
+function run() {
+
+}</textarea>
+
+			<canvas name="canvas" id="canvas"></canvas>
+
+
+		</div>
+
+
+
+    </body>
+</html>
