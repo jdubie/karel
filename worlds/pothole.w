@@ -1,4 +1,4 @@
 dimension:4:9
 
-bottom:1:1
+top:2:2
 karel:2:0
